@@ -17,14 +17,14 @@ st.markdown("""
 
 # App Header
 st.title("🛍️ Shopee Calculator")
-st.write("Calculate your exact payout or find your perfect selling price.")
+st.write("Calculate your exact profit or find your perfect selling price.")
 
 st.write("---")
 
 # ==========================================
-# TOOL 1: FORWARD CALCULATOR (Calculate Payout)
+# TOOL 1: FORWARD CALCULATOR (Calculate Profit)
 # ==========================================
-st.subheader("1️⃣ Calculate Payout")
+st.subheader("1️⃣ Calculate Profit")
 st.caption("Find out exactly how much you will receive after fees.")
 
 price = st.number_input("Product Selling Price (₱)", min_value=0.0, step=1.0, format="%.2f", key="forward_input")
