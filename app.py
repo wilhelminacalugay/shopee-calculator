@@ -63,7 +63,7 @@ st.subheader("2️⃣ MAGKANO DAPAT IBENTA")
 st.caption("Price na dapat mo ibenta for if through Shopee Checkout.")
 
 # Setting value=None makes the box blank initially
-target_profit = st.number_input("Puhunan", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter Puhunan...", key="reverse_input")
+target_profit = st.number_input("Puhunan (₱)", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter Puhunan...", key="reverse_input")
 
 if st.button("Calculate Benta Price", type="primary", key="btn_reverse"):
     # We must check if target_profit is not None before doing the math
