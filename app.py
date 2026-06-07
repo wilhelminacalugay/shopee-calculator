@@ -47,8 +47,8 @@ if st.button("Calculate My Profit", type="primary", key="btn_forward"):
             st.markdown(f"""
             * **Base Amount:** ₱{price:,.2f}
             * **Shopee Fees (-27%):** -₱{shopee_fee:,.2f}
-            * **Price after Shopee:** ₱{after_shopee:,.2f}
-            * **BIR WHT (-3%):** -₱{bir_fee:,.2f}
+            * **Price after Shopee Fees:** ₱{after_shopee:,.2f}
+            * **BIR Fees (-3%):** -₱{bir_fee:,.2f}
             * **Final Net Amount:** **₱{final_profit:,.2f}**
             """)
     else:
@@ -84,8 +84,8 @@ if st.button("Calculate Target Price", type="primary", key="btn_reverse"):
             st.markdown(f"""
             * **Base Amount:** ₱{target_price:,.2f}
             * **Shopee Fees (-27%):** -₱{shopee_fee_rev:,.2f}
-            * **Price after Shopee:** ₱{after_shopee_rev:,.2f}
-            * **BIR WHT (-3%):** -₱{bir_fee_rev:,.2f}
+            * **Price after Shopee Fees:** ₱{after_shopee_rev:,.2f}
+            * **BIR Fee (-3%):** -₱{bir_fee_rev:,.2f}
             * **Final Net Amount:** **₱{target_profit:,.2f}**
             """)
     else:
