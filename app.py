@@ -28,7 +28,7 @@ st.subheader("1️⃣ MAGKANO KIKITAIN")
 st.caption("Price ng makukuha after Shopee Checkout")
 
 # Setting value=None makes the box blank initially
-price = st.number_input("Shopee Checkout Price (₱)", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter price...", key="forward_input")
+price = st.number_input("Shopee Checkout Price (₱)", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter Shopee Checkout Price...", key="forward_input")
 
 if st.button("Calculate My Kita", type="primary", key="btn_forward"):
     # We must check if price is not None before doing the math
@@ -60,10 +60,10 @@ st.write("---")
 # TOOL 2: REVERSE CALCULATOR (Find Selling Price)
 # ==========================================
 st.subheader("2️⃣ MAGKANO DAPAT IBENTA")
-st.caption("Find out what to charge to cover all fees and hit your target.")
+st.caption("Price na dapat mo ibenta for if through Shopee Checkout.")
 
 # Setting value=None makes the box blank initially
-target_profit = st.number_input("Target Net Amount / Capital (₱)", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter target amount...", key="reverse_input")
+target_profit = st.number_input("Target Net Amount / Capital (₱)", min_value=0.0, step=1.0, format="%.2f", value=None, placeholder="Enter puhunan...", key="reverse_input")
 
 if st.button("Calculate Benta Price", type="primary", key="btn_reverse"):
     # We must check if target_profit is not None before doing the math
